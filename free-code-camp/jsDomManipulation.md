@@ -12,7 +12,6 @@ DOM manipulation is when you use JavaScript to add, remove, and modify elements 
 ## Table of contents
 
 - [DOM Fundamentals](#dom-fundamentals)
-  - [Links](#links)
   - [What is the DOM?](#what-is-the-dom)
   - [DOM Tree Analogy](#dom-tree-analogy)
   - [Selecting Elements in the DOM](#selecting-elements)
