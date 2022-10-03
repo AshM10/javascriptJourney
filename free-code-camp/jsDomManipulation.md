@@ -12,6 +12,23 @@ DOM manipulation is when you use JavaScript to add, remove, and modify elements 
 ## Table of contents
 
 - [DOM Fundamentals](#dom-fundamentals)
+  - [Links](#links)
+  - [What is the DOM?](#what-is-the-dom)
+  - [DOM Tree Analogy](#dom-tree-analogy)
+  - [Selecting Elements in the DOM](#selecting-elements)
+  - [Styling an Element](#styling-elements)
+  - [Creating Elements](#creating-elements)
+  - [Adding Elements](#adding-elements)
+  - [Modify Text](#modify-text)
+  - [Modifying Elements Attributes & Classes](#atrritbutes-classes)
+  - [Remove an Element](#remove-element)
+  - [DOM Tree Recap](#tree-recap)
+  - [Traversing the DOM](#traversing-dom)
+  - [Event Listeners](#event-listeners)
+  - [Event Listener Example](#event-listener-example)
+  - [Event Propagation](#event-propagation)
+  - [Event Delegation](#event-delegation)
+  - [Introduction to Projects](#introduction-to-projects)
 - [Project 1: Beginner](#project-1-beginner)
 - [Project 2: Beginner Plus](#project-2-beginner-plus)
 - [Project 3: Intermediate](#project-3-intermediate)
@@ -20,16 +37,16 @@ DOM manipulation is when you use JavaScript to add, remove, and modify elements 
 
 ## DOM Fundamentals 
 
-- What is the DOM?
+### What is the DOM?
 
 ![What is the DOM](https://user-images.githubusercontent.com/89284873/193674672-f5050bf8-0bce-449f-bec1-2177f461ccc3.png)
 
-- DOM Tree Analogy
+### DOM Tree Analogy
 Parent-child-sibling Relationship of Nodes
 
 ![DOM Tree](https://user-images.githubusercontent.com/89284873/193674765-45b1795c-1a78-4c1c-b64a-a856f11269c3.png)
 
-- Selecting Elements in the DOM
+### Selecting Elements in the DOM
 
 How to select these nodes in the DOM tree for manipulation:
 
@@ -39,7 +56,7 @@ Let's take a look at the browser:
 
 ![Screen Shot 2022-10-03 at 3 08 18 PM](https://user-images.githubusercontent.com/89284873/193675616-fab6033d-a13b-4513-b464-57d1d79c15b8.png)
 
-### GetElementById()
+#### GetElementById()
 - Select this element by its unique ID.
 - Place inside a variable so you can manipulate it.
 
@@ -48,7 +65,7 @@ const title = document.getElementById(`main-heading`);
 console.log(title);
 ```
 
-### GetElementByClassName()
+#### GetElementByClassName()
 - This method actually returns an array of all the child elements in the given class name (in index and the order that they are in the html file).
 
 ```js
@@ -56,7 +73,7 @@ const listItems = document.getElementByClassName('list-items');
 console.log(listItems);
 ```
 
-### GetElementByTagName()
+#### GetElementByTagName()
 - pretty similar to getElementByClassName() except it returns all elements specified in that tag name. 
 
 ```js
@@ -64,7 +81,7 @@ const listItems = document.getElementByTagName('li');
 console.log(listItems);
 ```
 
-### querySelector()
+#### querySelector()
 - used to select one item or the first item that matches the selector given.
 - can accept all CSS Style selectors
 
@@ -73,7 +90,7 @@ const container = document.querySelector('div');
 console.log(container);
 ```
 
-### querySelectorAll()
+#### querySelectorAll()
 - returns a node list.
 - returns all the elements that matches the given selector.
 
@@ -84,9 +101,9 @@ console.log(container);
 
 ** Note: Recommended to use: querySelector() and querySelectorAll() **
 
-- Styling an Element
+### Styling an Element
 
-### Access CSS with JavaScript
+#### Access CSS with JavaScript
 - write css variable in camelcase when accessing in JavaScript
 
 ```js
@@ -108,22 +125,22 @@ for (i = 0; i < listItems.length; i++) {
 
 ** Note: listItems will be changes once you loop through the lists. 
 
-- Creating Elements
+### Creating Elements
 
 Stopped video at 16:27.
 
 
-- Adding Elements
-- Modify Text
-- Modifying Elements Attributes & Classes
-- Remove an Element
-- DOM Tree Recap
-- Traversing the DOM
-- Event Listeners
-- Event Listener Example
-- Event Propagation
-- Event Delegation
-- Introduction to Projects
+### Adding Elements
+### Modify Text
+### Modifying Elements Attributes & Classes
+### Remove an Element
+### DOM Tree Recap
+### Traversing the DOM
+### Event Listeners
+### Event Listener Example
+### Event Propagation
+### Event Delegation
+### Introduction to Projects
 
 ## Project 1: Beginner
 
