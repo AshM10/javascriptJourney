@@ -44,11 +44,75 @@ Let's take a look at the browser:
 - Place inside a variable so you can manipulate it.
 
 ```js
-document.getElementById(`main-heading`);
+const title = document.getElementById(`main-heading`);
+console.log(title);
 ```
 
+### GetElementByClassName()
+- This method actually returns an array of all the child elements in the given class name (in index and the order that they are in the html file).
+
+```js
+const listItems = document.getElementByClassName('list-items');
+console.log(listItems);
+```
+
+### GetElementByTagName()
+- pretty similar to getElementByClassName() except it returns all elements specified in that tag name. 
+
+```js
+const listItems = document.getElementByTagName('li');
+console.log(listItems);
+```
+
+### querySelector()
+- used to select one item or the first item that matches the selector given.
+- can accept all CSS Style selectors
+
+```js
+const container = document.querySelector('div');
+console.log(container);
+```
+
+### querySelectorAll()
+- returns a node list.
+- returns all the elements that matches the given selector.
+
+```js
+const container = document.querySelectorAll('div');
+console.log(container);
+```
+
+** Note: Recommended to use: querySelector() and querySelectorAll() **
+
 - Styling an Element
+
+### Access CSS with JavaScript
+- write css variable in camelcase when accessing in JavaScript
+
+```js
+const title = document.querySelector('#main-heading');
+title.style.color = 'red';
+```
+
+![Screen Shot 2022-10-03 at 3 55 34 PM](https://user-images.githubusercontent.com/89284873/193680788-11598d92-f1a7-4a25-b2a4-1328bb77b1d1.png)
+
+```js
+const listItems = document.querySelectorAll('list-items');
+
+for (i = 0; i < listItems.length; i++) {
+   listItems[i].style.fontSize = '2rem';
+}
+```
+
+![Screen Shot 2022-10-03 at 3 59 15 PM](https://user-images.githubusercontent.com/89284873/193681387-837d9bbd-f003-48f9-92e0-0e95a8f3d9b5.png)
+
+** Note: listItems will be changes once you loop through the lists. 
+
 - Creating Elements
+
+Stopped video at 16:27.
+
+
 - Adding Elements
 - Modify Text
 - Modifying Elements Attributes & Classes
