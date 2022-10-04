@@ -251,10 +251,13 @@ li.remove();
 - The DOM object itself is actually a property of the window object.
   - Window object is the global, top object. 
 - Document node is the root node. It has one child called the HTML node.
-- Class Attributes are also nodes but they don't participate in the parent-child-relationship building. They are considered properties.
-- Learning how to traverse a DOM tree is essential to understanding JavaScript and HTML.
+- Class Attributes are also nodes but they don't participate in the parent-child-relationship building. They are considered properties of the node that contains them.
+- Learning how to traverse a DOM tree is essential to understanding how to work with JavaScript and HTML.
 
 ### Traversing the DOM
+
+Stopped at 27:59
+
 ### Event Listeners
 ### Event Listener Example
 ### Event Propagation
