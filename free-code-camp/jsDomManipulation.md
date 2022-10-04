@@ -1,5 +1,7 @@
 # JavaScript DOM Manipulation Course via FreeCodeCamp
 
+This repository is made for note-taking about the course. 
+
 DOM stands for Document Object Model.
 It is a programming interface that allows us to create, change, or remove elements from a website document. 
 
@@ -122,18 +124,136 @@ for (i = 0; i < listItems.length; i++) {
 
 ![Screen Shot 2022-10-03 at 3 59 15 PM](https://user-images.githubusercontent.com/89284873/193681387-837d9bbd-f003-48f9-92e0-0e95a8f3d9b5.png)
 
-** Note: listItems will be changes once you loop through the lists. 
+** Note: listItems will be changed once you loop through the lists. 
 
 ### Creating Elements
 
-Stopped video at 16:27.
+- create a new element by using the createElement method.
 
+```js
+const ul = document.querySelector('ul');
+const li = document.createElement('li');
+```
 
 ### Adding Elements
+
+- use the append method to insert (add) the document.
+
+```js
+const ul = document.querySelector('ul');
+const li = document.createElement('li');
+
+ul.append(li);
+```
+
 ### Modify Text
+
+- Let's add a span inside the html:
+  
+![Screen Shot 2022-10-04 at 12 26 23 PM](https://user-images.githubusercontent.com/89284873/193886159-4e645848-8a58-4195-a22e-4df6a8c9921c.png)
+
+- Ways to target an element:
+
+```js
+const firstListItem = document.querySelector('.list-items');
+
+console.log(firstListItem.innerText);
+console.log(firstListItem.textContent);
+console.log(firstListItem.innerHTML);
+```
+
+![Screen Shot 2022-10-04 at 12 31 41 PM](https://user-images.githubusercontent.com/89284873/193887088-e0935437-d539-41ca-a32d-dd2c674b3f8c.png)
+
+![Screen Shot 2022-10-04 at 12 30 48 PM](https://user-images.githubusercontent.com/89284873/193886931-528b0136-dd8a-4e78-841d-650ced9be17b.png)
+
+** Note: In most cases, just use .innerText because using .innerHTML has a bit of risk to it. **
+
+- Modify text using .innerText
+
+```js
+const ul = document.querySelector('ul');
+const li = document.createElement('li');
+
+ul.append(li);
+li.innerText = 'x-men';
+```
+
 ### Modifying Elements Attributes & Classes
+
+- Set Attribute method
+  - You need to include two values: the attribute you want to set, the name you want to give that attribute.
+
+```js
+li.setAttribute('id', 'main-heading');
+```
+
+![Screen Shot 2022-10-04 at 12 40 22 PM](https://user-images.githubusercontent.com/89284873/193888730-951e11d3-e0e6-4a87-85e6-d02d4a4c9c3b.png)
+
+- Removing an attribute
+
+```js
+li.setAttribute('id', 'main-heading');
+li.removeAttribute('id');
+```
+
+![Screen Shot 2022-10-04 at 12 42 17 PM](https://user-images.githubusercontent.com/89284873/193889090-34168586-bc54-4969-83c6-64d630f42ef0.png)
+
+- Access styling attribute
+
+```js
+const title = document.querySelector('#main-heading);
+
+console.log(title.getAttribute('id'));
+```
+
+![Screen Shot 2022-10-04 at 12 46 56 PM](https://user-images.githubusercontent.com/89284873/193889885-b728f2a3-18be-48f5-8554-db9ac81ec65b.png)
+
+- Add method for classes
+
+```js
+li.classList.add('list-items');
+```
+
+![Screen Shot 2022-10-04 at 12 48 43 PM](https://user-images.githubusercontent.com/89284873/193890203-4e02e948-4990-4945-8beb-824c75cc5b2e.png)
+
+- removing a class
+
+```js
+li.classList.remove('list-items');
+```
+
+![Screen Shot 2022-10-04 at 12 49 38 PM](https://user-images.githubusercontent.com/89284873/193890359-d77b332f-3b07-4933-acb9-547e45998cd8.png)
+
+- Find out whether an element has that specific class
+
+```js
+console.log(li.classList.contains('list-items'));
+```
+
+![Screen Shot 2022-10-04 at 12 51 00 PM](https://user-images.githubusercontent.com/89284873/193890591-82a85fed-0c46-4307-be5d-7ca79f4cc9a6.png)
+
+** Note: console is returning false because we removed the class earlier. **
+
 ### Remove an Element
+
+- All we need is the remove method
+
+```js
+li.remove();
+```
+
+![Screen Shot 2022-10-04 at 12 52 56 PM](https://user-images.githubusercontent.com/89284873/193890940-7c994436-3d43-4e04-bbc5-579d080f3cd0.png)
+
 ### DOM Tree Recap
+
+![Screen Shot 2022-10-04 at 12 53 53 PM](https://user-images.githubusercontent.com/89284873/193891138-344fdfe3-e398-4e9b-a926-d1c493506fec.png)
+
+- The DOM object itself is actually a property of the window object.
+  - Window object is the global, top object. 
+- Document node is the root node. It has one child called the HTML node.
+- Class Attributes are also nodes but they don't participate in the parent-child-relationship building. They are considered properties.
+- Learning how to traverse a DOM tree is essential to understanding JavaScript and HTML.
+
 ### Traversing the DOM
 ### Event Listeners
 ### Event Listener Example
