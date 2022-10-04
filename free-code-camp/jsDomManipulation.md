@@ -9,7 +9,7 @@ DOM manipulation is when you use JavaScript to add, remove, and modify elements 
 
 ![Before we begin](https://user-images.githubusercontent.com/89284873/193674590-9da3b9fa-44ea-407e-9d0b-df2f30a540b5.png)
 
-[FreeCodeCamp](https://www.freecodecamp.org/news/javascript-dom-manipulation/)
+Link: [FreeCodeCamp](https://www.freecodecamp.org/news/javascript-dom-manipulation/)
 
 ## Table of contents
 
