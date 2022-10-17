@@ -296,3 +296,7 @@ Stopped at 27:59
 - Project 5 Mark Up
 - Project 5 CSS Styling
 - Project 5 JavaScript
+
+## Resources 
+
+- [How the JavaScript DOM Works – A Practical Tutorial](https://www.freecodecamp.org/news/the-javascript-dom-a-practical-tutorial/)
